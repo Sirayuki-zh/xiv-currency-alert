@@ -8,43 +8,43 @@ namespace CurrencyAlert.Enum
 {
     public enum Currency
     {
-        [Name("Tomestones of Poetics"), ItemID(28), DefaultThreshold(1400), Category("Battle")]
+        [Name("亚拉戈诗学神典石"), ItemID(28), DefaultThreshold(1400), Category("战斗")]
         TomestoneOfPoetics,
-        [Name("Tomestones of Aphorism"), ItemID(42), DefaultThreshold(1700), Category("Battle")]
+        [Name("亚拉戈经典神典石"), ItemID(42), DefaultThreshold(1700), Category("战斗")]
         TomestoneOfAphorism,
-        [Name("Tomestones of Astronomy"), ItemID(43), DefaultThreshold(1700), Category("Battle")]
+        [Name("亚拉戈天文神典石"), ItemID(43), DefaultThreshold(1700), Category("战斗")]
         TomestoneOfAstronomy,
 
-        [Name("Storm Seals"),  ItemID(20), DefaultThreshold(75000), Category("Common")]
+        [Name("黑涡团军票"),  ItemID(20), DefaultThreshold(75000), Category("共通")]
         StormSeal,
-        [Name("Serpent Seals"), ItemID(21), DefaultThreshold(75000), Category("Common")]
+        [Name("双蛇党军票"), ItemID(21), DefaultThreshold(75000), Category("共通")]
         SerpentSeal,
-        [Name("Flame Seals"), ItemID(22), DefaultThreshold(75000), Category("Common")]
+        [Name("恒辉队军票"), ItemID(22), DefaultThreshold(75000), Category("共通")]
         FlameSeal,
 
-        [Name("Wolf Marks"), ItemID(25), DefaultThreshold(18000), Category("Battle")]
+        [Name("狼印战绩"), ItemID(25), DefaultThreshold(18000), Category("战斗")]
         WolfMark,
-        [Name("Trophy Crystal"), ItemID(36656), DefaultThreshold(18000), Category("Battle")]
+        [Name("战利水晶"), ItemID(36656), DefaultThreshold(18000), Category("战斗")]
         TrophyCrystal,
 
-        [Name("Allied Seals"), ItemID(27), DefaultThreshold(3500), Category("Battle")]
+        [Name("同盟徽章"), ItemID(27), DefaultThreshold(3500), Category("战斗")]
         AlliedSeal,
-        [Name("Centurio Seals"), ItemID(10307), DefaultThreshold(3500), Category("Battle")]
+        [Name("兵团徽章"), ItemID(10307), DefaultThreshold(3500), Category("战斗")]
         CenturioSeal,
-        [Name("Sack of Nuts"), ItemID(26533), DefaultThreshold(3500), Category("Battle")]
+        [Name("怪物狩猎的战利品"), ItemID(26533), DefaultThreshold(3500), Category("战斗")]
         SackOfNut,
-        [Name("Bicolor Gemstone"), ItemID(26807), DefaultThreshold(800), Category("Battle")]
+        [Name("双色宝石"), ItemID(26807), DefaultThreshold(800), Category("战斗")]
         BicolorGemstone,
 
-        [Name("White Crafters' Scrip"), ItemID(25199), DefaultThreshold(1500), Category("Other")]
+        [Name("巧手白票"), ItemID(25199), DefaultThreshold(1500), Category("其他")]
         WhiteCraftersScrip,
-        [Name("Purple Crafters' Scrip"), ItemID(33913), DefaultThreshold(1500), Category("Other")]
+        [Name("巧手紫票"), ItemID(33913), DefaultThreshold(1500), Category("其他")]
         PurpleCraftersScrip,
-        [Name("White Gatherers' Scrip"), ItemID(25200), DefaultThreshold(1500), Category("Other")]
+        [Name("大地白票"), ItemID(25200), DefaultThreshold(1500), Category("其他")]
         WhiteGatherersScrip,
-        [Name("Purple Gatherers' Scrip"), ItemID(33914), DefaultThreshold(1500), Category("Other")]
+        [Name("大地紫票"), ItemID(33914), DefaultThreshold(1500), Category("其他")]
         PurpleGatherersScrip,
-        [Name("Skybuilders' Scrip"), ItemID(28063), DefaultThreshold(7500), Category("Other")]
+        [Name("天穹街振兴票"), ItemID(28063), DefaultThreshold(7500), Category("其他")]
         SkybuildersScrip
     }
 }

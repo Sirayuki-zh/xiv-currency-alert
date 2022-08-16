@@ -48,8 +48,8 @@ namespace CurrencyAlert
                 if (!this.AlertVisible[currency])
                     return;
 
-                ImGui.SetNextWindowSize(new Vector2(375, 10), ImGuiCond.FirstUseEver);
-                ImGui.SetNextWindowSizeConstraints(new Vector2(375, 10), new Vector2(float.MaxValue, float.MaxValue));
+                ImGui.SetNextWindowSize(new Vector2(180, 10), ImGuiCond.FirstUseEver);
+                ImGui.SetNextWindowSizeConstraints(new Vector2(180, 10), new Vector2(float.MaxValue, float.MaxValue));
 
                 var isVisible = this.AlertVisible[currency];
 
@@ -62,7 +62,7 @@ namespace CurrencyAlert
                     ))
                 {
                     var name = EnumHelper.GetAttributeOfType<NameAttribute>(currency).Value;
-                    ImGui.Text($"You need to spend your {name}");
+                    ImGui.Text($"你该花 {name} 了！");
                 }
 
                 ImGui.End();
@@ -84,7 +84,7 @@ namespace CurrencyAlert
 
                         if (ImGui.BeginTabItem(category))
                         {
-                            if (ImGui.Checkbox($"{name} Alert Enabled", ref alertEnabled))
+                            if (ImGui.Checkbox($"{name} 提醒启用", ref alertEnabled))
                             {
                                 this.configuration.AlertEnabled[currency] = alertEnabled;
                                 this.configuration.Save();
@@ -92,7 +92,7 @@ namespace CurrencyAlert
 
                             var thresholdValue = this.configuration.Threshold[currency];
 
-                            if (ImGui.InputInt($"{name} Threshold Value", ref thresholdValue, 1, 1,
+                            if (ImGui.InputInt($"{name} 阈值", ref thresholdValue, 1, 1,
                                 this.configuration.AlertEnabled[currency] ? ImGuiInputTextFlags.None : ImGuiInputTextFlags.ReadOnly))
                             {
                                 this.configuration.Threshold[currency] = thresholdValue;
