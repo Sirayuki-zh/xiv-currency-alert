@@ -84,7 +84,7 @@ namespace CurrencyAlert
 
                         if (ImGui.BeginTabItem(category))
                         {
-                            if (ImGui.Checkbox($"{name} 提醒启用", ref alertEnabled))
+                            if (ImGui.Checkbox($"{name} 启用提醒", ref alertEnabled))
                             {
                                 this.configuration.AlertEnabled[currency] = alertEnabled;
                                 this.configuration.Save();
